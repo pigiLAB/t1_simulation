@@ -1,0 +1,93 @@
+title                    = Neutralize
+define                   = -DFLEXIBLE -DPOSRES
+
+
+integrator               = steep
+tinit                    = 0
+dt                       = 0.001
+init_step                = 0
+nsteps                   = 200
+comm-mode                = Linear
+nstcomm                  = 1
+comm_grps                = system
+
+emtol                    = 1.0
+emstep                   = 0.0001
+
+nstxout                  = 10
+nstvout                  = 10000
+nstfout                  = 10000
+nstlog                   = 1000
+nstenergy                = 1
+nstxout-compressed       = 1
+compressed-x-precision   = 1000
+xtc_grps                 = 
+
+nstlist                  = 10
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 1.0
+
+cutoff-scheme            = Verlet
+
+coulombtype              = PME
+rcoulomb-switch          = 0
+rcoulomb                 = 1
+epsilon_r                = 1
+epsilon_rf               = 1
+
+vdwtype                  = Cut-off
+rvdw-switch              = 0.
+rvdw                     = 1
+DispCorr                 = No
+
+fourierspacing           = 0.125
+fourier_nx               = 0
+fourier_ny               = 0
+fourier_nz               = 0
+pme_order                = 4
+ewald_rtol               = 1e-05
+ewald_geometry           = 3d
+epsilon_surface          = 0
+
+tcoupl                   = No
+tc-grps                  = 
+ref-t                    = 
+tau-t                    = 
+Pcoupl                   = No
+Pcoupltype               = 
+tau-p                    = 
+compressibility          = 
+ref-p                    = 
+
+QMMM                     = no
+QMMM-grps                = 
+QMmethod                 = 
+QMMMscheme               = normal
+QMbasis                  = 
+QMcharge                 = 
+QMmult                   = 
+SH                       = 
+CASorbitals              = 
+CASelectrons             = 
+SAon                     = 
+SAoff                    = 
+SAsteps                  = 
+MMChargeScaleFactor      = 1
+bOPT                     = 
+bTS                      = 
+
+gen_vel                  = yes
+gen_temp                 = 300
+gen_seed                 = 18111976
+
+constraints              = none
+constraint_algorithm     = LINCS
+continuation             = yes
+Shake-SOR                = no
+shake_tol                = 0.0001
+lincs_order              = 4
+lincs-iter               = 1
+lincs_warnangle          = 30
+morse                    = no
+

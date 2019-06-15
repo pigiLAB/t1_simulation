@@ -1,0 +1,66 @@
+title                    = Steep minimization
+define                   = -DFLEXIBLE -DPOSRES
+
+integrator               = steep
+tinit                    = 0
+dt                       = 0.001 ; 1 fs
+init_step                = 0
+nsteps                   = 1000 ; 1 ps
+
+emtol                    = 1.0
+emstep                   = 0.0001
+
+nstxout                  = 1
+nstvout                  = 10000
+nstfout                  = 10000
+nstlog                   = 10000
+nstenergy                = 10000
+nstxout-compressed       = 10000
+compressed-x-precision   = 1000
+
+nstlist                  = 10
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 1.0
+
+cutoff-scheme            = Verlet
+
+coulombtype              = PME
+rcoulomb                 = 1.0
+
+vdwtype                  = Cut-off
+rvdw                     = 1.0
+DispCorr                 = No
+
+tcoupl                   = No
+tc-grps                  = 
+tau-t                    = 
+ref-t                    = 
+Pcoupl                   = No
+Pcoupltype               = 
+tau-p                    = 
+compressibility          = 
+ref-p                    = 
+
+QMMM                     = no
+QMMM-grps                = 
+QMmethod                 = 
+QMMMscheme               = normal
+QMbasis                  = 
+QMcharge                 = 
+QMmult                   = 
+SH                       = 
+CASorbitals              = 
+CASelectrons             = 
+SAon                     = 
+SAoff                    = 
+SAsteps                  = 
+MMChargeScaleFactor      = 1
+bOPT                     = 
+bTS                      = 
+
+gen_vel					 = no
+gen_temp                 = 
+
+constraint-algorithm     = lincs
+constraints              = h-bonds

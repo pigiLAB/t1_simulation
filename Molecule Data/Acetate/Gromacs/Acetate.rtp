@@ -1,0 +1,35 @@
+; ----------------------------------------------
+; TPP - topology generator version 0.1 
+; created by Erg Research Group
+; MSU, Biology Faculty, Department of Biophysics
+; ----------------------------------------------
+; ATTENTION! Do not forget to use the proper version
+; of the force field fork (not less than revision). 
+; Watch for corresponding force field at: 
+;            bitbucket.com/comcon1
+; ----------------------------------------------
+; Please ascertain that the topology is valid. We 
+; do not guarantee that. If you find that something
+; is wrong, please report us to comconadin@gmail.com
+[  ACT ]
+
+[ atoms ]
+  C1     opls_271    0.700     1 
+ 1O1    opls_272   -0.800     1 
+ 2O1    opls_272   -0.800     1 
+  C2     opls_273   -0.280     2 
+ 1H2    opls_140    0.060     2 
+ 2H2    opls_140    0.060     2 
+ 3H2    opls_140    0.060     2 
+
+[ bonds ]
+1H2    C2   
+ C2    2H2  
+ C2    3H2  
+ C2     C1   
+1O1     C1   
+ C1    2O1  
+
+[ impropers ]
+2O1   C2   C1 1O1 improper_O_C_X_Y 
+; topology successfully writed

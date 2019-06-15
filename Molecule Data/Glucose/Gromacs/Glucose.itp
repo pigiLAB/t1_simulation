@@ -1,0 +1,315 @@
+; ----------------------------------------------
+; TPP - topology generator version 0.1 
+; created by Erg Research Group
+; MSU, Biology Faculty, Department of Biophysics
+; ----------------------------------------------
+; ATTENTION! Do not forget to use the proper version
+; of the force field fork (not less than revision). 
+; Watch for corresponding force field at: 
+;            bitbucket.com/comcon1
+; ----------------------------------------------
+; Please ascertain that the topology is valid. We 
+; do not guarantee that. If you find that something
+; is wrong, please report us to comconadin@gmail.com
+; ----------------------------------------------
+; Topology was prepared for use with the force field:
+;         OPLS-AA revision jun16
+
+[ moleculetype ]
+  GLR 3
+
+; Force constant parameters
+#define dfTPP_bon_OH_HO_254       1    0.095  4.63e+05 ;1
+#define dfTPP_bon_HC_CT_191       1    0.109  2.85e+05 ;1
+#define dfTPP_bon_OH_CT_208       1    0.141  2.68e+05 ;1
+#define dfTPP_bon_CT_CT_187       1    0.153  2.24e+05 ;1
+#define dfTPP_bon_OS_CT_213       1    0.141  2.68e+05 ;1
+#define dfTPP_bon_OS_CO_80        1    0.138  2.68e+05 ;1
+#define dfTPP_bon_OH_CO_279       1    0.138  2.68e+05 ;1
+#define dfTPP_bon_HC_CO_280       1    0.109  2.85e+05 ;1
+#define dfTPP_bon_CT_CO_278       1    0.153  2.24e+05 ;1
+#define dfTPP_ang_HO_OH_CT_721    1  108.5    460.2    ;2
+#define dfTPP_ang_OH_CT_CT_535    1  109.5    418.4    ;2
+#define dfTPP_ang_HC_CT_CT_507    1  110.7    313.8    ;2
+#define dfTPP_ang_CT_CT_CT_499    1  112.7    488.3    ;2
+#define dfTPP_ang_OH_CT_HC_587    1  109.5    292.9    ;2
+#define dfTPP_ang_CT_CT_CO_743    1  112.7    488.3    ;2
+#define dfTPP_ang_HC_CT_CO_749    1  110.7    313.8    ;2
+#define dfTPP_ang_OH_CT_CO_750    1  109.5    418.4    ;2
+#define dfTPP_ang_OS_CO_OH_737    1  111.5    774.9    ;2
+#define dfTPP_ang_OS_CO_HC_747    1  109.5    292.9    ;2
+#define dfTPP_ang_OS_CO_CT_742    1  109.5    418.4    ;2
+#define dfTPP_ang_OH_CO_HC_751    1  109.5    292.9    ;2
+#define dfTPP_ang_OH_CO_CT_744    1  109.5    418.4    ;2
+#define dfTPP_ang_HC_CO_CT_745    1  110.7    313.8    ;2
+#define dfTPP_ang_HO_OH_CO_746    1  108.5    460.2    ;2
+#define dfTPP_ang_CT_OS_CO_748    1  109.5    502.1    ;2
+#define dfTPP_ang_OS_CT_CT_539    1  109.5    418.4    ;2
+#define dfTPP_ang_OS_CT_HC_592    1  109.5    292.9    ;2
+#define dfTPP_ang_HC_CT_HC_555    1  107.8    276.1    ;2
+#define dfTPP_dih_HO_OH_CT_HC_528 3  +0.9  +2.8  +0.0  -3.8  +0.0  +0.0 ;3
+#define dfTPP_dih_HO_OH_CT_CT_318 3  +1.7  +5.6  +6.1  +2.2  +0.0  +0.0 ;3
+#define dfTPP_dih_HC_CT_CT_HC_510 3  +0.6  +1.9  +0.0  -2.5  +0.0  +0.0 ;3
+#define dfTPP_dih_OS_CT_CT_HC_518 3  +1.0  +2.9  +0.0  -3.9  +0.0  +0.0 ;3
+#define dfTPP_dih_HC_CT_CT_CT_287 3  +0.6  +1.9  +0.0  -2.5  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CT_CT_HC_517 3  +1.0  +2.9  +0.0  -3.9  +0.0  +0.0 ;3
+#define dfTPP_dih_OS_CT_CT_OH_594 3  +9.0  -9.0  +0.0  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CT_CT_CT_295 3  -2.8  -2.8  +0.0  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_CT_CT_OS_CO_192 3  +1.7  +2.8  +1.0  -5.6  +0.0  +0.0 ;3
+#define dfTPP_dih_HC_CT_OS_CO_193 3  +1.6  +4.8  +0.0  -6.4  +0.0  +0.0 ;3
+#define dfTPP_dih_CT_CT_CT_CT_284 3  +2.9  -1.5  +0.2  -1.7  +0.0  +0.0 ;3
+#define dfTPP_dih_OS_CT_CT_CT_296 3  -2.8  -2.8  +0.0  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CO_OS_CT_360 3  -3.6  -0.8  +2.9  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_HC_CO_OS_CT_359 3  +1.6  +4.8  +0.0  -6.4  +0.0  +0.0 ;3
+#define dfTPP_dih_CT_CO_OS_CT_256 3  +1.7  +2.8  +1.0  -5.6  +0.0  +0.0 ;3
+#define dfTPP_dih_OS_CO_OH_HO_560 3  -6.4  -2.6  +3.8  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_HO_OH_CO_HC_1376 3  +0.9  +2.8  +0.0  -3.8  +0.0  +0.0 ;3
+#define dfTPP_dih_HO_OH_CO_CT_1375 3  -0.4  +3.8  +0.7  -4.1  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CT_CT_OH_593 3 +19.0 -19.0  +0.0  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_OS_CO_CT_CT_693 3  +2.9  +0.6  +2.1  -5.5  +0.0  +0.0 ;3
+#define dfTPP_dih_OS_CO_CT_HC_507 3  +1.0  +2.9  +0.0  -3.9  +0.0  +0.0 ;3
+#define dfTPP_dih_OS_CO_CT_OH_1371 3  +9.1  +9.1  +0.0  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CO_CT_CT_692 3  +2.9  +0.6  +2.1  -5.5  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CO_CT_HC_1373 3  +1.0  +2.9  +0.0  -3.9  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CT_CO_OH_1370 3 +19.0 -19.0  +0.0  +0.0  +0.0  +0.0 ;3
+#define dfTPP_dih_HC_CO_CT_CT_279 3  +0.6  +1.9  +0.0  -2.5  +0.0  +0.0 ;3
+#define dfTPP_dih_HC_CT_CO_HC_1374 3  +0.6  +1.9  +0.0  -2.5  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CT_CO_HC_1372 3  +1.0  +2.9  +0.0  -3.9  +0.0  +0.0 ;3
+#define dfTPP_dih_CT_CT_CT_CO_188 3  +2.9  -1.5  +0.2  -1.7  +0.0  +0.0 ;3
+#define dfTPP_dih_HC_CT_CT_CO_189 3  +0.6  +1.9  +0.0  -2.5  +0.0  +0.0 ;3
+#define dfTPP_dih_OH_CT_CT_CO_825 3  +2.9  +0.6  +2.1  -5.5  +0.0  +0.0 ;3
+#define dfTPP_dih_HO_OH_CT_CO_191 3  +1.7  +5.6  +6.1  +2.2  +0.0  +0.0 ;3
+
+[ atoms ]
+  1  opls_171   1  GLR   O1     1  -0.730   15.999400 ; [ OH]  O:    triols
+  2  opls_172   1  GLR   1H1    2  +0.465    1.008000 ; [ HO]  H(O): triols
+  3  opls_174   1  GLR   C2     3  +0.205   12.011000 ; [ CT]  C(HROH): triols
+  4  opls_176   1  GLR   1H2    3  +0.060    1.008000 ; [ HC]  H(CXOH): triols
+  5  opls_174   1  GLR   C3     4  +0.205   12.011000 ; [ CT]  C(HROH): triols
+  6  opls_176   1  GLR   1H3    4  +0.060    1.008000 ; [ HC]  H(CXOH): triols
+  7  opls_171   1  GLR   O4     5  -0.730   15.999400 ; [ OH]  O:    triols
+  8  opls_172   1  GLR   1H4    6  +0.465    1.008000 ; [ HO]  H(O): triols
+  9  opls_174   1  GLR   C5     7  +0.205   12.011000 ; [ CT]  C(HROH): triols
+ 10  opls_176   1  GLR   1H5    7  +0.060    1.008000 ; [ HC]  H(CXOH): triols
+ 11  opls_171   1  GLR   O6     8  -0.730   15.999400 ; [ OH]  O:    triols
+ 12  opls_172   1  GLR   1H6    9  +0.465    1.008000 ; [ HO]  H(O): triols
+ 13  opls_195   1  GLR   C7    10  +0.365   12.011000 ; [ CO]  C(HCO2): hemiacetal OCHROH
+ 14  opls_196   1  GLR   1H7   10  +0.100    1.008000 ; [ HC]  H(C2O2): hemiacetal OCHROH
+ 15  opls_187   1  GLR   O8    11  -0.700   15.999400 ; [ OH]  O(H): hemiacetal
+ 16  opls_188   1  GLR   1H8   12  +0.435    1.008000 ; [ HO]  H(O): hemiacetal
+ 17  opls_186   1  GLR   O9    13  -0.400   15.999400 ; [ OS]  O: acetal ether 
+ 18  opls_183   1  GLR   C10   14  +0.170   12.011000 ; [ CT]  C(HOR):  i-Pr   ether, allose
+ 19  opls_185   1  GLR   1H10  14  +0.030    1.008000 ; [ HC]  H(COR): alpha H ether
+ 20  opls_157   1  GLR   C11   15  +0.145   12.011000 ; [ CT]  all-atom C: CH3 & CH2, alcohols
+ 21  opls_140   1  GLR   1H11  15  +0.060    1.008000 ; [ HC]  alkane H.
+ 22  opls_140   1  GLR   2H11  15  +0.060    1.008000 ; [ HC]  alkane H.
+ 23  opls_154   1  GLR   O12   16  -0.683   15.999400 ; [ OH]  all-atom O: mono alcohols
+ 24  opls_155   1  GLR   1H12  17  +0.418    1.008000 ; [ HO]  all-atom H(O): mono alcohols, OP(=O)2
+
+[ bonds ]
+ 24  23  dfTPP_bon_OH_HO_254
+  2   1  dfTPP_bon_OH_HO_254
+ 15  16  dfTPP_bon_OH_HO_254
+  7   8  dfTPP_bon_OH_HO_254
+ 11  12  dfTPP_bon_OH_HO_254
+ 22  20  dfTPP_bon_HC_CT_191
+ 20  21  dfTPP_bon_HC_CT_191
+ 19  18  dfTPP_bon_HC_CT_191
+  3   4  dfTPP_bon_HC_CT_191
+  6   5  dfTPP_bon_HC_CT_191
+  9  10  dfTPP_bon_HC_CT_191
+ 23  20  dfTPP_bon_OH_CT_208
+  1   3  dfTPP_bon_OH_CT_208
+  5   7  dfTPP_bon_OH_CT_208
+  9  11  dfTPP_bon_OH_CT_208
+ 20  18  dfTPP_bon_CT_CT_187
+ 18   3  dfTPP_bon_CT_CT_187
+  3   5  dfTPP_bon_CT_CT_187
+  5   9  dfTPP_bon_CT_CT_187
+ 18  17  dfTPP_bon_OS_CT_213
+ 17  13  dfTPP_bon_OS_CO_80
+ 15  13  dfTPP_bon_OH_CO_279
+ 13  14  dfTPP_bon_HC_CO_280
+ 13   9  dfTPP_bon_CT_CO_278
+
+[ angles ]
+  2   1   3  dfTPP_ang_HO_OH_CT_721
+  5   7   8  dfTPP_ang_HO_OH_CT_721
+  9  11  12  dfTPP_ang_HO_OH_CT_721
+ 20  23  24  dfTPP_ang_HO_OH_CT_721
+  1   3  18  dfTPP_ang_OH_CT_CT_535
+  1   3   5  dfTPP_ang_OH_CT_CT_535
+  3   5   7  dfTPP_ang_OH_CT_CT_535
+  7   5   9  dfTPP_ang_OH_CT_CT_535
+  5   9  11  dfTPP_ang_OH_CT_CT_535
+ 18  20  23  dfTPP_ang_OH_CT_CT_535
+  4   3  18  dfTPP_ang_HC_CT_CT_507
+  4   3   5  dfTPP_ang_HC_CT_CT_507
+  3   5   6  dfTPP_ang_HC_CT_CT_507
+  6   5   9  dfTPP_ang_HC_CT_CT_507
+  5   9  10  dfTPP_ang_HC_CT_CT_507
+ 19  18  20  dfTPP_ang_HC_CT_CT_507
+  3  18  19  dfTPP_ang_HC_CT_CT_507
+ 18  20  22  dfTPP_ang_HC_CT_CT_507
+ 18  20  21  dfTPP_ang_HC_CT_CT_507
+  5   3  18  dfTPP_ang_CT_CT_CT_499
+  3   5   9  dfTPP_ang_CT_CT_CT_499
+  3  18  20  dfTPP_ang_CT_CT_CT_499
+  1   3   4  dfTPP_ang_OH_CT_HC_587
+  6   5   7  dfTPP_ang_OH_CT_HC_587
+ 10   9  11  dfTPP_ang_OH_CT_HC_587
+ 22  20  23  dfTPP_ang_OH_CT_HC_587
+ 21  20  23  dfTPP_ang_OH_CT_HC_587
+  5   9  13  dfTPP_ang_CT_CT_CO_743
+ 10   9  13  dfTPP_ang_HC_CT_CO_749
+ 11   9  13  dfTPP_ang_OH_CT_CO_750
+ 15  13  17  dfTPP_ang_OS_CO_OH_737
+ 14  13  17  dfTPP_ang_OS_CO_HC_747
+  9  13  17  dfTPP_ang_OS_CO_CT_742
+ 14  13  15  dfTPP_ang_OH_CO_HC_751
+  9  13  15  dfTPP_ang_OH_CO_CT_744
+  9  13  14  dfTPP_ang_HC_CO_CT_745
+ 13  15  16  dfTPP_ang_HO_OH_CO_746
+ 13  17  18  dfTPP_ang_CT_OS_CO_748
+ 17  18  20  dfTPP_ang_OS_CT_CT_539
+  3  18  17  dfTPP_ang_OS_CT_CT_539
+ 17  18  19  dfTPP_ang_OS_CT_HC_592
+ 21  20  22  dfTPP_ang_HC_CT_HC_555
+
+[ dihedrals ]
+ 24  23  20  22  dfTPP_dih_HO_OH_CT_HC_528
+ 24  23  20  21  dfTPP_dih_HO_OH_CT_HC_528
+  2   1   3   4  dfTPP_dih_HO_OH_CT_HC_528
+  6   5   7   8  dfTPP_dih_HO_OH_CT_HC_528
+ 10   9  11  12  dfTPP_dih_HO_OH_CT_HC_528
+ 24  23  20  18  dfTPP_dih_HO_OH_CT_CT_318
+  2   1   3  18  dfTPP_dih_HO_OH_CT_CT_318
+  2   1   3   5  dfTPP_dih_HO_OH_CT_CT_318
+  3   5   7   8  dfTPP_dih_HO_OH_CT_CT_318
+  9   5   7   8  dfTPP_dih_HO_OH_CT_CT_318
+  5   9  11  12  dfTPP_dih_HO_OH_CT_CT_318
+ 22  20  18  19  dfTPP_dih_HC_CT_CT_HC_510
+ 21  20  18  19  dfTPP_dih_HC_CT_CT_HC_510
+ 19  18   3   4  dfTPP_dih_HC_CT_CT_HC_510
+  4   3   5   6  dfTPP_dih_HC_CT_CT_HC_510
+  6   5   9  10  dfTPP_dih_HC_CT_CT_HC_510
+ 22  20  18  17  dfTPP_dih_OS_CT_CT_HC_518
+ 21  20  18  17  dfTPP_dih_OS_CT_CT_HC_518
+ 17  18   3   4  dfTPP_dih_OS_CT_CT_HC_518
+ 22  20  18   3  dfTPP_dih_HC_CT_CT_CT_287
+ 21  20  18   3  dfTPP_dih_HC_CT_CT_CT_287
+ 20  18   3   4  dfTPP_dih_HC_CT_CT_CT_287
+ 19  18   3   5  dfTPP_dih_HC_CT_CT_CT_287
+ 18   3   5   6  dfTPP_dih_HC_CT_CT_CT_287
+  4   3   5   9  dfTPP_dih_HC_CT_CT_CT_287
+  3   5   9  10  dfTPP_dih_HC_CT_CT_CT_287
+ 23  20  18  19  dfTPP_dih_OH_CT_CT_HC_517
+ 19  18   3   1  dfTPP_dih_OH_CT_CT_HC_517
+  1   3   5   6  dfTPP_dih_OH_CT_CT_HC_517
+  4   3   5   7  dfTPP_dih_OH_CT_CT_HC_517
+  6   5   9  11  dfTPP_dih_OH_CT_CT_HC_517
+  7   5   9  10  dfTPP_dih_OH_CT_CT_HC_517
+ 23  20  18  17  dfTPP_dih_OS_CT_CT_OH_594
+ 17  18   3   1  dfTPP_dih_OS_CT_CT_OH_594
+ 23  20  18   3  dfTPP_dih_OH_CT_CT_CT_295
+ 20  18   3   1  dfTPP_dih_OH_CT_CT_CT_295
+ 18   3   5   7  dfTPP_dih_OH_CT_CT_CT_295
+  1   3   5   9  dfTPP_dih_OH_CT_CT_CT_295
+  3   5   9  11  dfTPP_dih_OH_CT_CT_CT_295
+ 20  18  17  13  dfTPP_dih_CT_CT_OS_CO_192
+  3  18  17  13  dfTPP_dih_CT_CT_OS_CO_192
+ 19  18  17  13  dfTPP_dih_HC_CT_OS_CO_193
+ 20  18   3   5  dfTPP_dih_CT_CT_CT_CT_284
+ 18   3   5   9  dfTPP_dih_CT_CT_CT_CT_284
+ 17  18   3   5  dfTPP_dih_OS_CT_CT_CT_296
+ 18  17  13  15  dfTPP_dih_OH_CO_OS_CT_360
+ 18  17  13  14  dfTPP_dih_HC_CO_OS_CT_359
+ 18  17  13   9  dfTPP_dih_CT_CO_OS_CT_256
+ 16  15  13  17  dfTPP_dih_OS_CO_OH_HO_560
+ 16  15  13  14  dfTPP_dih_HO_OH_CO_HC_1376
+ 16  15  13   9  dfTPP_dih_HO_OH_CO_CT_1375
+  1   3   5   7  dfTPP_dih_OH_CT_CT_OH_593
+  7   5   9  11  dfTPP_dih_OH_CT_CT_OH_593
+ 17  13   9   5  dfTPP_dih_OS_CO_CT_CT_693
+ 17  13   9  10  dfTPP_dih_OS_CO_CT_HC_507
+ 17  13   9  11  dfTPP_dih_OS_CO_CT_OH_1371
+ 15  13   9   5  dfTPP_dih_OH_CO_CT_CT_692
+ 15  13   9  10  dfTPP_dih_OH_CO_CT_HC_1373
+ 15  13   9  11  dfTPP_dih_OH_CT_CO_OH_1370
+ 14  13   9   5  dfTPP_dih_HC_CO_CT_CT_279
+ 14  13   9  10  dfTPP_dih_HC_CT_CO_HC_1374
+ 14  13   9  11  dfTPP_dih_OH_CT_CO_HC_1372
+  3   5   9  13  dfTPP_dih_CT_CT_CT_CO_188
+  6   5   9  13  dfTPP_dih_HC_CT_CT_CO_189
+  7   5   9  13  dfTPP_dih_OH_CT_CT_CO_825
+ 13   9  11  12  dfTPP_dih_HO_OH_CT_CO_191
+
+[ pairs ]
+;
+ 24  22  1
+ 24  21  1
+ 24  18  1
+ 22  19  1
+ 22  17  1
+ 22   3  1
+ 23  19  1
+ 23  17  1
+ 23   3  1
+ 21  19  1
+ 21  17  1
+ 21   3  1
+ 20  13  1
+ 19  13  1
+  3  13  1
+ 20   1  1
+ 20   4  1
+ 20   5  1
+ 19   1  1
+ 19   4  1
+ 19   5  1
+ 17   1  1
+ 17   4  1
+ 17   5  1
+ 18  15  1
+ 18  14  1
+ 18   9  1
+  2  18  1
+  2   4  1
+  2   5  1
+ 16  17  1
+ 16  14  1
+ 16   9  1
+ 18   6  1
+ 18   9  1
+ 18   7  1
+  1   6  1
+  1   9  1
+  1   7  1
+  4   6  1
+  4   9  1
+  4   7  1
+ 17   5  1
+ 17  10  1
+ 17  11  1
+ 15   5  1
+ 15  10  1
+ 15  11  1
+ 14   5  1
+ 14  10  1
+ 14  11  1
+  3  13  1
+  3  10  1
+  3  11  1
+  6  13  1
+  6  10  1
+  6  11  1
+  7  13  1
+  7  10  1
+  7  11  1
+  3   8  1
+  6   8  1
+  9   8  1
+ 13  12  1
+  5  12  1
+ 10  12  1
+; topology successfully writed

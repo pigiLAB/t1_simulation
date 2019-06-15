@@ -1,0 +1,67 @@
+; ----------------------------------------------
+; TPP - topology generator version 0.1 
+; created by Erg Research Group
+; MSU, Biology Faculty, Department of Biophysics
+; ----------------------------------------------
+; ATTENTION! Do not forget to use the proper version
+; of the force field fork (not less than revision). 
+; Watch for corresponding force field at: 
+;            bitbucket.com/comcon1
+; ----------------------------------------------
+; Please ascertain that the topology is valid. We 
+; do not guarantee that. If you find that something
+; is wrong, please report us to comconadin@gmail.com
+[ GLR ]
+
+[ atoms ]
+  O1     opls_171   -0.730     1 
+  1H1    opls_172    0.465     2 
+  C2     opls_174    0.205     3 
+  1H2    opls_176    0.060     3 
+  C3     opls_174    0.205     4 
+  1H3    opls_176    0.060     4 
+  O4     opls_171   -0.730     5 
+  1H4    opls_172    0.465     6 
+  C5     opls_174    0.205     7 
+  1H51   opls_176    0.060     7 
+  O6     opls_171   -0.730     8 
+  1H6    opls_172    0.465     9 
+  C7     opls_195    0.365    10 
+  1H7    opls_196    0.100    10 
+  O8     opls_187   -0.700    11 
+  1H8    opls_188    0.435    12 
+  O9     opls_186   -0.400    13 
+  C10    opls_183    0.170    14 
+  1H10   opls_185    0.030    14 
+  C11    opls_157    0.145    15 
+  1H11   opls_140    0.060    15 
+  2H11   opls_140    0.060    15 
+  O12    opls_154   -0.683    16 
+  1H12   opls_155    0.418    17 
+
+[ bonds ]
+ 1H12   O12  
+ 1H1    O1   
+ O8     1H8  
+ O4     1H4  
+ O6     1H6  
+ 2H11   C11  
+ C11    1H11 
+ 1H10   C10  
+ C2     1H2  
+ 1H3    C3   
+ C5     1H5  
+ O12    C11  
+ O1     C2   
+ C3     O4   
+ C5     O6   
+ C11    C10  
+ C10    C2   
+ C2     C3   
+ C3     C5   
+ C10    O9   
+ O9     C7   
+ O8     C7   
+ C7     1H7  
+ C7     C5   
+; topology successfully writed

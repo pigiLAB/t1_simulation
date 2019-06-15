@@ -1,0 +1,78 @@
+; ----------------------------------------------
+; TPP - topology generator version 0.1 
+; created by Erg Research Group
+; MSU, Biology Faculty, Department of Biophysics
+; ----------------------------------------------
+; ATTENTION! Do not forget to use the proper version
+; of the force field fork (not less than revision). 
+; Watch for corresponding force field at: 
+;            bitbucket.com/comcon1
+; ----------------------------------------------
+; Please ascertain that the topology is valid. We 
+; do not guarantee that. If you find that something
+; is wrong, please report us to comconadin@gmail.com
+; ----------------------------------------------
+; Topology was prepared for use with the force field:
+;         OPLS-AA revision jun16
+
+[ moleculetype ]
+  ACT 3
+
+; Force constant parameters
+#define dfTPP_bon_HC_CT_191       1    0.109  2.85e+05 ;1
+#define dfTPP_bon_C_3_CT_21       1    0.152  2.65e+05 ;1
+#define dfTPP_bon_O2_C_3_41       1    0.125  5.49e+05 ;1
+#define dfTPP_ang_O2_C_3_CT_124   2  117.0    585.8    ;2
+#define dfTPP_ang_O2_C_3_O2_197   2  126.0    669.4    ;2
+#define dfTPP_ang_HC_CT_HC_555    2  107.8    276.1    ;2
+#define dfTPP_ang_HC_CT_C_3_470   2  109.5    292.9    ;2
+#define dfTPP_dih_O_C_C_HC        3  0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ;3
+
+[ atoms ]
+  1  opls_271   1  ACT   C1     1  +0.700   12.011000 ; [C_3]  C in COO- carboxylate
+  2  opls_272   1  ACT  1O1    1  -0.800   15.999400 ; [ O2]  O: O in COO- carboxylate,peptide terminus
+  3  opls_272   1  ACT  2O1    1  -0.800   15.999400 ; [ O2]  O: O in COO- carboxylate,peptide terminus
+  4  opls_273   1  ACT   C2     2  -0.280   12.011000 ; [ CT]  C: CH3, carboxylate ion
+  5  opls_140   1  ACT  1H2    2  +0.060    1.008000 ; [ HC]  alkane H.
+  6  opls_140   1  ACT  2H2    2  +0.060    1.008000 ; [ HC]  alkane H.
+  7  opls_140   1  ACT  3H2    2  +0.060    1.008000 ; [ HC]  alkane H.
+
+[ bonds ]
+  5   4  dfTPP_bon_HC_CT_191
+  4   6  dfTPP_bon_HC_CT_191
+  4   7  dfTPP_bon_HC_CT_191
+  4   1  dfTPP_bon_C_3_CT_21
+  2   1  dfTPP_bon_O2_C_3_41
+  1   3  dfTPP_bon_O2_C_3_41
+
+[ angles ]
+  2   1   4  dfTPP_ang_O2_C_3_CT_124
+  3   1   4  dfTPP_ang_O2_C_3_CT_124
+  2   1   3  dfTPP_ang_O2_C_3_O2_197
+  5   4   6  dfTPP_ang_HC_CT_HC_555
+  5   4   7  dfTPP_ang_HC_CT_HC_555
+  6   4   7  dfTPP_ang_HC_CT_HC_555
+  1   4   5  dfTPP_ang_HC_CT_C_3_470
+  1   4   6  dfTPP_ang_HC_CT_C_3_470
+  1   4   7  dfTPP_ang_HC_CT_C_3_470
+
+[ dihedrals ]
+  5   4   1   2  dfTPP_dih_O_C_C_HC
+  5   4   1   3  dfTPP_dih_O_C_C_HC
+  6   4   1   2  dfTPP_dih_O_C_C_HC
+  6   4   1   3  dfTPP_dih_O_C_C_HC
+  7   4   1   2  dfTPP_dih_O_C_C_HC
+  7   4   1   3  dfTPP_dih_O_C_C_HC
+
+[ dihedrals ]
+  3   4   1   2  1  improper_O_C_X_Y
+
+[ pairs ]
+;
+  5   2  1
+  5   3  1
+  6   2  1
+  6   3  1
+  7   2  1
+  7   3  1
+; topology successfully writed

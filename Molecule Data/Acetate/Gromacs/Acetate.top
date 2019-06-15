@@ -1,0 +1,38 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (1000)
+;	On host: Joe-Desktop
+;	At date: Fri Jan  6 20:39:48 2017
+
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2016.1 (-:
+;	
+;
+
+; Include forcefield parameters
+#include "oplsaa.ff/forcefield.itp"
+
+; Include Molecule definition
+#include "Acetate.itp"
+
+; Include Position restraint file
+#ifdef POSRES
+#include "Acetate-posres.itp"
+#endif
+
+; Include water topology
+#include "oplsaa.ff/tip4pew.itp"
+
+; Include topology for ions
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+Acetate
+
+[ molecules ]
+; Compound        #mols
+ACT               1
