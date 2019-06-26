@@ -1,0 +1,34 @@
+## Readme for getting started with the T1 simulation pipeline
+## All code is Python
+
+## Necessary packages: multiprocessing, pathos, numpy, matplotlib, MDAnalysis
+## Necessary programs: Gaussian (09 or 16). Note that T1Calculator.py line 68
+##                     must be appropriately modified 
+
+## This code assumes a molecular trajectory has been generated from Gromacs
+## and saved as a numpy npz file by running "T1Calculator.py #moleculename#"
+
+
+import numpy a np
+import #moleculename# as mol
+from T1Calculator import T1Calculator
+t1 = T1Calculator(mol)
+
+#Trajectory data for system
+data = np.load('#moleculename#.npz')
+
+#Perform all of the QM calculations with Gaussian. Need to run
+#method a second time to aggregate results
+#   Note that the first call will take many hours to run
+#   all of the QM calculations through Gaussian
+t1.calcQM(data)
+dataFull = t1.calcQM(data)
+
+#Save the entire trajectory with QM values
+np.savez_compressed('#moleculename#.npz', **dataFull)
+
+#Perform a T1 simulation with default values
+results = t1.simT1(dataFull)
+
+#Get and plot the results
+t1.plotT1(results, extrap=True)
